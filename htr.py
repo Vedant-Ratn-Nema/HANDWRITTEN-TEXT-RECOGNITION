@@ -8,10 +8,10 @@ from PIL import ImageTk, Image
 
 
 def gettext(x):
-    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'C:\Users\Lenovo\Desktop\PROJECTS\HCI\VisionAPIDemo\try2.json'
+    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'C:\Users\Lenovo\Desktop\PROJECTS\HCI\serviceauth.json'
     client = vision_v1.ImageAnnotatorClient()
 
-    FOLDER_PATH = r'C:\Users\Lenovo\Desktop\PROJECTS\HCI\VisionAPIDemo'
+    FOLDER_PATH = r'C:\Users\Lenovo\Desktop\PROJECTS\HCI'
     IMAGE_FILE = x
     FILE_PATH = os.path.join(FOLDER_PATH, IMAGE_FILE)
 
